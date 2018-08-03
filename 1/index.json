@@ -1,19 +1,16 @@
 {
-	"pathwayTitle": "Kubernetes Bootcamp",
+	"pathwayTitle": "Kubernetes Workshop Guatemala",
 	"title": "Module 1",
-	"description": "Create a Kubernetes cluster",
-	"backend": {
-		"port": 30000,
-		"imageid": "minikube"
-	},
+	"description": "Este workshop mostrará como funconan los componentes basicos de kubernetes",
 	"environment": {
-		"uilayout": "terminal",
-		"hideintro": false,
-		"hidefinish": false
-	},
+    "uilayout": "editor-terminal"
+  },
+  "backend": {
+    "imageid": "kubernetes-cluster"
+  },
 	"details": {
 		"steps": [{
-			"title": " Cluster up and running",
+			"title": "Paso 1 - Familiarizarce con el comando kubectl",
 			"text": "step1.md"
 		}, {
 			"title": "Cluster version",
