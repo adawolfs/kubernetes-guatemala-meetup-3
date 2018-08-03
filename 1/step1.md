@@ -8,4 +8,4 @@ Bueno, ya que nuestro cluster esta iniciado vamos a comenzar a inspeccionar nues
 
 Ahora inspeccionaremos un poco más profundo, veremos que pods hay ya deployados en nuestro cluster por defecto:
 
-`kubectl get pods --all-namespaces`{{execute}}
+`kubectl get pods --all-namespaces -w`{{execute}}

@@ -8,3 +8,15 @@ Para obtener el codigo:
 Ahora entraremos a nuestra carpeta 
 `cd kubernetes-guatemala`{{execute}}
 
+Para inspeccionar nuestra carpeta:
+`ls`{{execute}}
+
+Empezaremos con los pods:
+`cd pods`{{execute}}
+
+Createmos nuestro pod con el siguiente comando:
+`kubectl create -f pod.yaml`{{execute}}
+
+Ahora podemos ver como nuestro pod es deployado utilizando el siguiente comando:
+`kubectl get pods -w`{{execute}}
+
