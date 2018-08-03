@@ -1,7 +1,8 @@
-# The goal of this interactive scenario is to deploy a local development Kubernetes cluster using minikube #
+# El objetivo de este workshop sera brindar una primera experiencia utilizando kuberentes demostrando lo facil que es su utilización #
 
-The online terminal is a pre-configured Linux environment that can be used as a regular console (you can type commands). 
-Clicking on the `blocks of code` followed by the ENTER sign will execute that command in the terminal.
+Para este workshop se proveera una teminal y un editor de texto que permitira visualizar los elementos y realizar los ejercicios.
+
+Haciendo click sobre los `bloques de codigo` ejecutara dicho comando, pero siempre puedes ingresarlo por tu cuenta.
 
 
 

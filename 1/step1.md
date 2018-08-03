@@ -1,12 +1,11 @@
-We already installed minikube for you. Check that it is properly installed, by running the *minikube version* command:
+Esta instancia ya tiene kubernetes instalado, para verificar la conexión al cluster ejecutaremos el siguiente comando:
 
-`minikube version`{{execute}}
+`kubectl version`{{execute}}
 
-OK, we can see that minikube is in place.
+Bueno, ya que nuestro cluster esta iniciado vamos a comenzar a inspeccionar nuestro cluster, con el siguiente comando podemos ver que nodos existen en nuestra instancia y verificar su funcionamiento:
 
-Start the cluster, by running the *minikube start* command:
+`kubectl get nodes`{{execute}}
 
-`minikube start`{{execute}}
+Ahora inspeccionaremos un poco más profundo, veremos que pods hay ya deployados en nuestro cluster por defecto:
 
-Great! You now have a running Kubernetes cluster in your online terminal. Minikube started a virtual machine for you, and a Kubernetes cluster is now running in that VM.
-
+`kubectl get pods --all-namespaces`{{execute}}

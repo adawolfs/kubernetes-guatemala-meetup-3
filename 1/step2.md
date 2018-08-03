@@ -1,6 +1,10 @@
-To interact with Kubernetes during this bootcamp we’ll use the command line interface, kubectl. We’ll explain kubectl in detail in the next modules, but for now, we’re just going to look at some cluster information.
-To check if kubectl is installed you can run the *kubectl version* command:
+Ya que tenemos una vista generica de nuestro cluster lo que toca ahora será crear algunos objetos y empezar a jugar con ellos.
 
-`kubectl version`{{execute}}
+Para eso utilizaremos los archivos en el siguiente repositorio https://github.com/adawolfs/kubernetes-guatemala.git
 
-OK, kubectl is configured and we can see both the version of the client and as well as the server. The client version is the kubectl version; the server version is the Kubernetes version installed on the master. You can also see details about the build.
+Para obtener el codigo:
+`git clone https://github.com/adawolfs/kubernetes-guatemala.git`{{execute}}
+
+Ahora entraremos a nuestra carpeta 
+`cd kubernetes-guatemala`{{execute}}
+
