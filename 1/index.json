@@ -6,8 +6,9 @@
     "uilayout": "editor-terminal"
   },
   "backend": {
-    "imageid": "kubernetes-cluster"
-  },
+		"port": 30000,
+		"imageid": "minikube"
+	},
 	"details": {
 		"steps": [{
 			"title": "Paso 1 - Familiarizarce con el comando kubectl",
