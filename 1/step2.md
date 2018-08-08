@@ -1,11 +1,10 @@
+# Crear nuestro primer POD
+
 Ya que tenemos una vista generica de nuestro cluster lo que toca ahora será crear algunos objetos y empezar a jugar con ellos.
 
-Para eso utilizaremos los archivos en el siguiente repositorio https://github.com/adawolfs/kubernetes-guatemala.git
+Para eso utilizaremos los archivos en la carpeta "files"
 
-Para obtener el codigo:
-`git clone https://github.com/adawolfs/kubernetes-guatemala.git`{{execute}}
-
-Ahora entraremos a nuestra carpeta 
+Ahora entraremos a nuestra carpeta:
 `cd kubernetes-guatemala`{{execute}}
 
 Para inspeccionar nuestra carpeta:
@@ -14,9 +13,10 @@ Para inspeccionar nuestra carpeta:
 Empezaremos con los pods:
 `cd pods`{{execute}}
 
+Antes de seguir, haremos una inspección del objeto con el editor de la parte superior de la ventana
+
 Createmos nuestro pod con el siguiente comando:
 `kubectl create -f pod.yaml`{{execute}}
 
 Ahora podemos ver como nuestro pod es deployado utilizando el siguiente comando:
 `kubectl get pods -w`{{execute}}
-

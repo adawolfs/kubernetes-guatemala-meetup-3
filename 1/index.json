@@ -7,7 +7,7 @@
   },
   "backend": {
 		"port": 30000,
-		"imageid": "minikube"
+		"dockerimage": "minikube-running"
 	},
 	"details": {
 		"steps": [{
@@ -29,7 +29,13 @@
 		},
 		"assets": {
 			"host01": [
-				{"file": "configmap/configmap.yaml", "target": "~/configmap/"}
+				{"file": "configmap/configmap.yaml", "target": "~/kubernetes-guatemala/configmap/"},
+				{"file": "configmap/pod.yaml", "target": "~/kubernetes-guatemala/configmap/"},
+				{"file": "pods/pod.yaml", "target": "~/kubernetes-guatemala/pod/"},
+				{"file": "pods/service.yaml", "target": "~/kubernetes-guatemala/pod/"},
+				{"file": "configmap/configmap.yaml", "target": "~/kubernetes-guatemala/configmap/"},
+				{"file": "configmap/configmap.yaml", "target": "~/kubernetes-guatemala/configmap/"}
+
 			]
 		}
 	},

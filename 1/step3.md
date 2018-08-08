@@ -1,11 +1,10 @@
-Let’s view the cluster details. We’ll do that by running *kubectl cluster-info*:
+# Exponer nuestro POD al mundo
 
-`kubectl cluster-info`{{execute}}
+Ya que nuestro pod se encuentra creado y listo para ser utilizado, vamos a implementar otro tipo de objeto para exponerlo al mundo
 
-We have a running master and a dashboard. The Kubernetes dashboard allows you to view your applications in a UI. During this tutorial, we’ll be focusing on the command line for deploying and exploring our application.
-To view the nodes in the cluster, run the *kubectl get nodes* command:
+Antes de seguir, haremos una inspección del objeto con el editor de la parte superior de la ventana
 
-`kubectl get nodes`{{execute}}
+Para ello haremos uso del siguiente comando:
+`kubectl create -f service.yaml`{{execute}}
 
-This command shows all nodes that can be used to host our applications. Now we have only one node, and we can see that it’s status is ready (it is ready to accept applications for deployment). 
-
+Con el comando anterior estaremos creando un servicio el cual nos servira para poder acceder a nuestro Pod desde la red.
