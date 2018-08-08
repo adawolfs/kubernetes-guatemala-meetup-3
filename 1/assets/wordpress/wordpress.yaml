@@ -5,6 +5,7 @@ metadata:
   labels:
     app: wordpress
 spec:
+  type: NodePort
   ports:
     - port: 80
       nodePort: 30081
