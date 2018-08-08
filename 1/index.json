@@ -29,8 +29,8 @@
 		},
 		"assets": {
 			"host01": [
-				{"file": "configmap", "target": "~/", "chmod": "+x"},
-				{"file": "pods", "target": "~/", "chmod": "+x"},
+				{"file": "configmap/configmap.yaml", "target": "~/configmap/"},
+				{"file": "pods", "target": "~/", "chmod": "+x"}
 			]
 		}
 	},
