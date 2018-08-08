@@ -13,6 +13,11 @@ Crear un configmap
 `kubectl create -f configmap.yaml`{{execute}}
 
 Ahora que tenemos nuestro configmap debemos de montarlo dentro de nuestro pod, para ello sustituiremos nuestro antiguo POD por uno que este configurado para montar un configmap
+
+Eliminamos nuestro pod anterior
+`kubectl delete pod nginx`{{execute}}
+
+Aplicamos la nueva configuración
 `kubectl create -f pod.yaml`{{execute}}
 
 Ahora accederemos de nuevo a nuestro servicio y veremos nuestra nueva pagina configurada.
