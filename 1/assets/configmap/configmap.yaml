@@ -1,0 +1,70 @@
+# Esta es la descripción de nuestro configmap
+# los configmap son utilizados para proveer archivos a nuestros pods
+# por lo regular se utiliza para configuraciones
+
+apiVersion: v1  # Esta es la version del api a la cual pertenece el ConfigMap
+kind: ConfigMap # Este es el tipo de nuestro archivo
+metadata: # Definicion de la metadata de nuestro objeto
+  name: nginx
+  labels:
+    name: nginx
+data: # Aqui se especifica la data que contentra el Config Map
+  index.html: |
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Kubernetes Guatemala</title>
+
+        <!-- Bootstrap Core CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">    
+        <link href="main.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="container ajuste-container">
+            <div class="text-center">
+                <img class="logo" src="images/kubernetes.png" alt="">
+            </div>
+            <p class="text-center parrafo-info">
+                Gracias por participar
+            </p>
+            <hr>
+            <div class="text-center titulo-nombre">
+                <h1>
+                    Nombre 
+                </h1>
+            </div>
+            <hr>
+        </div>
+    </body>
+  main.css: |
+    body {
+        background-color: #346ee5;
+        background-image: url(bg.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+
+    }
+    .ajuste-container {
+        /* margin-top: 20%; */
+        color: white;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -webkit-transform: translate(-50%, -50%);
+    }
+    .logo {
+        width: 300px;
+        height: auto;
+    }
+    .parrafo-info, 
+    .titulo-nombre {
+        margin-top: 50px;
+    }
+    .titulo-nombre {
+        margin-bottom: 50px;
+    }

@@ -1,0 +1,16 @@
+# Este archivo contiene la descripcion de un objeto tipo POD
+# en este se especifica como hacer deploy de un POD con un contenedor
+# de NGINX el cual es un servidor web en el cual podemos cargar paginas web
+
+apiVersion: v1 # Esta es la version del api a la cual pertenece el Pod
+kind: Pod # Este es el tipo de objeto 
+metadata: # Metadata contiene datos informativos del objeto
+  name: nginx # Nombre del objeto
+  labels: # Labels que pueden ser utilizados para hacer referencia al objeto
+    name: nginx # Label 'name'
+spec: # Descripción del objeto
+  containers: # Listado de contenedores dentro del pod
+  - name: nginx # Nombre del contenedor
+    image: nginx # Imagen proveniente de DockerHub https://hub.docker.com/_/nginx/
+    ports: # Puertos que seran expuestos 
+      - containerPort: 80 # Puerto 80

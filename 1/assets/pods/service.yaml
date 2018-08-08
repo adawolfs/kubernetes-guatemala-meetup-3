@@ -1,0 +1,18 @@
+# Este archivo contiene la descripcion de un objeto tipo Service
+# los servicios son utilizados para exponer puertos desde los PODS
+# sin un servicio seria imposible acceder a los puertos de nuestros Contenedores
+
+apiVersion: v1 # Esta es la version del api a la cual pertenece el Servicio
+kind: Service  # Este es el tipo de objeto 
+metadata: # Metadata contiene datos informativos del objeto
+  name: nginx
+  labels:
+    name: nginx
+spec: # Descripcion del objeto
+  type: NodePort # Tipo de servicio en este caso utilizaremos NodePort para poder acceder directamente desde una url
+  ports: # Descripción de puertos 
+    - port: 80 # Puerto que se expondra desde el pod
+      nodePort: 30080 # Puerto del nodo en el cual se expondra el pod
+      name: http # Nombre que se le dara a dicho puerto
+  selector: # El selector es utilizado para hacer referencia al pod
+    name: nginx # Se hara referncia a todos los pods que tengan el label "name: nginx"
