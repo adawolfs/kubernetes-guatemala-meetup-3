@@ -1,6 +1,6 @@
 {
 	"pathwayTitle": "Kubernetes Workshop Guatemala",
-	"title": "Module 1",
+	"title": "Kubernetes Workshop Guatemala",
 	"description": "Este workshop mostrará como funconan los componentes basicos de kubernetes",
 	"environment": {
     "uilayout": "editor-terminal"
@@ -14,11 +14,14 @@
 			"title": "Paso 1 - Familiarizarce con el comando kubectl",
 			"text": "step1.md"
 		}, {
-			"title": "Cluster version",
+			"title": "Crear nuestro primer POD",
 			"text": "step2.md"
 		}, {
-			"title": "Cluster details",
+			"title": "Exponer nuestro POD al mundo",
 			"text": "step3.md"
+		}, {
+			"title": "Haciendo nuestro POD 'custom'",
+			"text": "step4.md"
 		}],
 		"intro": {
 			"courseData": "env-init.sh",

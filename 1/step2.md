@@ -11,7 +11,7 @@ Para inspeccionar nuestra carpeta:
 `ls`{{execute}}
 
 Empezaremos con los pods:
-`cd pods`{{execute}}
+`cd pod`{{execute}}
 
 Antes de seguir, haremos una inspección del objeto con el editor de la parte superior de la ventana
 

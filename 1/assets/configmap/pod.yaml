@@ -18,6 +18,9 @@ spec: # Descripción del objeto
       - name:  config # Que volumen sera montado
         mountPath: /usr/share/nginx/html/index.html # En que ruta queremos montar nuestro archivo
         subPath: index.html # Cual de los objetos en nuestro configmap queremos montar
+      - name:  config # Que volumen sera montado
+        mountPath: /usr/share/nginx/html/main.css # En que ruta queremos montar nuestro archivo
+        subPath: main.css # Cual de los objetos en nuestro configmap queremos montar
   volumes: # Definicion de los volumenes que estaran disponibles en este pod
   - name: config # Nombre que se le dara a nuestro volumen
     configMap: # Especificamos que este volumen sera de tipo ConfigMap
