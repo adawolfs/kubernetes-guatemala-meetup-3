@@ -34,7 +34,8 @@ data: # Aqui se especifica la data que contentra el Config Map
             <hr>
             <div class="text-center titulo-nombre">
                 <h1>
-                    Nombre 
+                <!-- PON TU NOMBRE AQUI!!!! -->
+                    
                 </h1>
             </div>
             <hr>

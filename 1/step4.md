@@ -12,15 +12,7 @@ Acceder a la carpeta con los configmap
 Crear un configmap
 `kubectl create -f configmap.yaml`{{execute}}
 
-Ahora que tenemos nuestro configmap
-Antes de seguir, haremos una inspección del objeto con el editor de la parte superior de la ventana
+Ahora que tenemos nuestro configmap debemos de montarlo dentro de nuestro pod, para ello sustituiremos nuestro antiguo POD por uno que este configurado para montar un configmap
+`kubectl create -f pod.yaml`{{execute}}
 
-Para ello haremos uso del siguiente comando:
-`kubectl create -f service.yaml`{{execute}}
-
-Con el comando anterior estaremos creando un servicio el cual nos servira para poder acceder a nuestro Pod desde la red.
-
-Para inspeccionar nuestro servicio podemos hacer uso del siguiente comando:
-`kubectl get services`{{execute}}
-
-Ahora abriremos una nueva ventana para poder vizualizar nuestro servicio funcionando.
+Ahora accederemos de nuevo a nuestro servicio y veremos nuestra nueva pagina configurada.
