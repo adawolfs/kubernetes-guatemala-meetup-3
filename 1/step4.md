@@ -12,8 +12,7 @@ Acceder a la carpeta con los configmap
 Crear un configmap
 `kubectl create -f configmap.yaml`{{execute}}
 
-
-
+Ahora que tenemos nuestro configmap
 Antes de seguir, haremos una inspección del objeto con el editor de la parte superior de la ventana
 
 Para ello haremos uso del siguiente comando:

@@ -26,7 +26,7 @@ data: # Aqui se especifica la data que contentra el Config Map
     <body>
         <div class="container ajuste-container">
             <div class="text-center">
-                <img class="logo" src="images/kubernetes.png" alt="">
+                <img class="logo" src="https://image.ibb.co/eK1RFp/kubernetes.png" alt="">
             </div>
             <p class="text-center parrafo-info">
                 Gracias por participar
@@ -43,7 +43,7 @@ data: # Aqui se especifica la data que contentra el Config Map
   main.css: |
     body {
         background-color: #346ee5;
-        background-image: url(bg.png);
+        background-image: url(https://image.ibb.co/i5Btvp/bg.png);
         background-size: cover;
         background-repeat: no-repeat;
 
