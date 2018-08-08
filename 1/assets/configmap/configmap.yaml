@@ -29,13 +29,13 @@ data: # Aqui se especifica la data que contentra el Config Map
                 <img class="logo" src="https://image.ibb.co/eK1RFp/kubernetes.png" alt="">
             </div>
             <p class="text-center parrafo-info">
-                Gracias por participar
+                Gracias por participar en nuestro workshop
             </p>
             <hr>
             <div class="text-center titulo-nombre">
                 <h1>
                 <!-- PON TU NOMBRE AQUI!!!! -->
-                    
+
                 </h1>
             </div>
             <hr>
